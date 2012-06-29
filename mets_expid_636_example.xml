@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<mets xmlns="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" PROFILE="Scientific Dataset Profile 1.0" xsi:schemaLocation="http://www.loc.gov/METS/ http://www.loc.gov/standards/mets/mets.xsd" LABEL="" TYPE="study" OBJID="A-1" xsi:type="mets">
+    <metsHdr CREATEDATE="2011-12-05T10:54:44" LASTMODDATE="2011-12-05T10:54:44">
+        <agent TYPE="ORGANIZATION" ROLE="DISSEMINATOR">
+            <name>Monash University</name>
+        </agent>
+        <agent TYPE="OTHER" ROLE="CREATOR">
+            <name>METS Exporter 0.1</name>
+        </agent>
+    </metsHdr>
+    <dmdSec ID="E-1">
+        <mdWrap MDTYPE="MODS">
+            <xmlData>
+                <mods:mods xmlns:mods="http://www.loc.gov/mods/v3">
+                    <mods:titleInfo>
+                        <mods:title>A bestatin-based chemical biology strategy reveals distinct roles for malaria M1- and M17-family aminopeptidases (example)</mods:title>
+                    </mods:titleInfo>
+                    <mods:genre>experiment</mods:genre>
+                    <mods:relatedItem type="otherVersion">
+                        <mods:originInfo>
+                            <mods:publisher>Primary Citation</mods:publisher>
+                        </mods:originInfo>
+                        <mods:location/>
+                    </mods:relatedItem>
+                    <mods:abstract>*** This is a subset of a public experiment for example purposes only *** Malaria causes worldwide morbidity and mortality, and while chemotherapy remains an excellent means of malaria control, drug-resistant parasites necessitate the discovery of new antimalarials. Peptidases are a promising class of drug targets and perform several important roles during the P. falciparum erythrocytic life cycle. Herein, we report a multidisciplinary effort combining activity-based protein profiling, biochemical, and peptidomic approaches to functionally analyze two genetically essential P. falciparum metallo-aminopeptidases (MAPs), PfA-M1 and Pf-LAP. Through the synthesis of a suite of activity-based probes (ABPs) based on the general MAP inhibitor scaffold, bestatin, we generated specific ABPs for these two enzymes. Specific inhibition of PfA-M1 caused swelling of the parasite digestive vacuole and prevented proteolysis of hemoglobin (Hb)-derived oligopeptides, likely starving the parasite resulting in death. In contrast, inhibition of Pf-LAP was lethal to parasites early in the lifecycle, prior to the onset of Hb degradation suggesting that Pf-LAP has an essential role outside of Hb digestion.</mods:abstract>
+                    <mods:name type="personal">
+                        <mods:namePart>McGowan S</mods:namePart>
+                        <mods:role>
+                            <mods:roleTerm type="text">author</mods:roleTerm>
+                        </mods:role>
+                    </mods:name>
+                    <mods:name type="personal">
+                        <mods:namePart>Klemba</mods:namePart>
+                        <mods:role>
+                            <mods:roleTerm type="text">author</mods:roleTerm>
+                        </mods:role>
+                    </mods:name>
+                    <mods:name type="personal">
+                        <mods:namePart>M.</mods:namePart>
+                        <mods:role>
+                            <mods:roleTerm type="text">author</mods:roleTerm>
+                        </mods:role>
+                    </mods:name>
+                    <mods:name type="personal">
+                        <mods:namePart>Greenbaum</mods:namePart>
+                        <mods:role>
+                            <mods:roleTerm type="text">author</mods:roleTerm>
+                        </mods:role>
+                    </mods:name>
+                    <mods:name type="personal">
+                        <mods:namePart>D.C.</mods:namePart>
+                        <mods:role>
+                            <mods:roleTerm type="text">author</mods:roleTerm>
+                        </mods:role>
+                    </mods:name>
+                </mods:mods>
+            </xmlData>
+        </mdWrap>
+    </dmdSec>
+    <dmdSec ID="D-1">
+        <mdWrap MDTYPE="MODS">
+            <xmlData>
+                <mods:mods xmlns:mods="http://www.loc.gov/mods/v3">
+                    <mods:titleInfo>
+                        <mods:title>3T8W_Dataset2</mods:title>
+                    </mods:titleInfo>
+                </mods:mods>
+            </xmlData>
+        </mdWrap>
+    </dmdSec>
+    <dmdSec ID="D-2">
+        <mdWrap MDTYPE="MODS">
+            <xmlData>
+                <mods:mods xmlns:mods="http://www.loc.gov/mods/v3">
+                    <mods:titleInfo>
+                        <mods:title>3T8W_dataset1</mods:title>
+                    </mods:titleInfo>
+                </mods:mods>
+            </xmlData>
+        </mdWrap>
+    </dmdSec>
+    <amdSec>
+        <techMD ID="A-1">
+            <mdWrap OTHERMDTYPE="TARDISDATASET" MDTYPE="OTHER">
+                <xmlData>
+                    <tardis:dataset xmlns:tardis="http://www.tardis.edu.au/schemas/trdDataset/2">
+                        <tardis:crystalName>xtal2_4</tardis:crystalName>
+                        <tardis:xraySource>MX2</tardis:xraySource>
+                        <tardis:resolutionLimit>0.0</tardis:resolutionLimit>
+                    </tardis:dataset>
+                </xmlData>
+            </mdWrap>
+        </techMD>
+        <techMD ID="A-2">
+            <mdWrap OTHERMDTYPE="TARDISDATAFILE" MDTYPE="OTHER">
+                <xmlData>
+                    <tardis:datafile xmlns:tardis="http://www.tardis.edu.au/schemas/trdDatafile/1">
+                        <tardis:exposureTime>1.0</tardis:exposureTime>
+                        <tardis:directBeamYPos>160.654</tardis:directBeamYPos>
+                        <tardis:detectorSN>928</tardis:detectorSN>
+                        <tardis:directBeamXPos>157.94202</tardis:directBeamXPos>
+                        <tardis:detectorDistance>299.9478</tardis:detectorDistance>
+                        <tardis:twoTheta>0.0</tardis:twoTheta>
+                        <tardis:imageSizeX>3072.0</tardis:imageSizeX>
+                        <tardis:imageSizeY>3072.0</tardis:imageSizeY>
+                        <tardis:xrayWavelength>0.953693</tardis:xrayWavelength>
+                        <tardis:imageType>ADSC</tardis:imageType>
+                    </tardis:datafile>
+                </xmlData>
+            </mdWrap>
+        </techMD>
+        <techMD ID="A-3">
+            <mdWrap OTHERMDTYPE="TARDISDATAFILE" MDTYPE="OTHER">
+                <xmlData>
+                    <tardis:datafile xmlns:tardis="http://www.tardis.edu.au/schemas/trdDatafile/1">
+                        <tardis:exposureTime>1.0</tardis:exposureTime>
+                        <tardis:directBeamYPos>160.654</tardis:directBeamYPos>
+                        <tardis:detectorSN>928</tardis:detectorSN>
+                        <tardis:directBeamXPos>157.94202</tardis:directBeamXPos>
+                        <tardis:detectorDistance>299.9478</tardis:detectorDistance>
+                        <tardis:twoTheta>0.0</tardis:twoTheta>
+                        <tardis:imageSizeX>3072.0</tardis:imageSizeX>
+                        <tardis:imageSizeY>3072.0</tardis:imageSizeY>
+                        <tardis:xrayWavelength>0.953693</tardis:xrayWavelength>
+                        <tardis:imageType>ADSC</tardis:imageType>
+                    </tardis:datafile>
+                </xmlData>
+            </mdWrap>
+        </techMD>
+        <techMD ID="A-4">
+            <mdWrap OTHERMDTYPE="TARDISDATAFILE" MDTYPE="OTHER">
+                <xmlData>
+                    <tardis:datafile xmlns:tardis="http://www.tardis.edu.au/schemas/trdDatafile/1">
+                        <tardis:exposureTime>1.0</tardis:exposureTime>
+                        <tardis:directBeamYPos>160.654</tardis:directBeamYPos>
+                        <tardis:detectorSN>928</tardis:detectorSN>
+                        <tardis:directBeamXPos>157.94202</tardis:directBeamXPos>
+                        <tardis:detectorDistance>299.9478</tardis:detectorDistance>
+                        <tardis:twoTheta>0.0</tardis:twoTheta>
+                        <tardis:imageSizeX>3072.0</tardis:imageSizeX>
+                        <tardis:imageSizeY>3072.0</tardis:imageSizeY>
+                        <tardis:xrayWavelength>0.953693</tardis:xrayWavelength>
+                        <tardis:imageType>ADSC</tardis:imageType>
+                    </tardis:datafile>
+                </xmlData>
+            </mdWrap>
+        </techMD>
+        <techMD ID="A-5">
+            <mdWrap OTHERMDTYPE="TARDISDATASET" MDTYPE="OTHER">
+                <xmlData>
+                    <tardis:dataset xmlns:tardis="http://www.tardis.edu.au/schemas/trdDataset/2">
+                        <tardis:crystalName>xtal2_3</tardis:crystalName>
+                        <tardis:xraySource>MX2</tardis:xraySource>
+                        <tardis:resolutionLimit>0.0</tardis:resolutionLimit>
+                    </tardis:dataset>
+                </xmlData>
+            </mdWrap>
+        </techMD>
+        <techMD ID="A-6">
+            <mdWrap OTHERMDTYPE="TARDISDATAFILE" MDTYPE="OTHER">
+                <xmlData>
+                    <tardis:datafile xmlns:tardis="http://www.tardis.edu.au/schemas/trdDatafile/1">
+                        <tardis:exposureTime>1.0</tardis:exposureTime>
+                        <tardis:directBeamYPos>160.40443</tardis:directBeamYPos>
+                        <tardis:detectorSN>928</tardis:detectorSN>
+                        <tardis:directBeamXPos>158.14867</tardis:directBeamXPos>
+                        <tardis:detectorDistance>250.0415</tardis:detectorDistance>
+                        <tardis:twoTheta>0.0</tardis:twoTheta>
+                        <tardis:imageSizeX>3072.0</tardis:imageSizeX>
+                        <tardis:imageSizeY>3072.0</tardis:imageSizeY>
+                        <tardis:xrayWavelength>0.953693</tardis:xrayWavelength>
+                        <tardis:imageType>ADSC</tardis:imageType>
+                    </tardis:datafile>
+                </xmlData>
+            </mdWrap>
+        </techMD>
+        <techMD ID="A-7">
+            <mdWrap OTHERMDTYPE="TARDISDATAFILE" MDTYPE="OTHER">
+                <xmlData>
+                    <tardis:datafile xmlns:tardis="http://www.tardis.edu.au/schemas/trdDatafile/1">
+                        <tardis:exposureTime>1.0</tardis:exposureTime>
+                        <tardis:directBeamYPos>160.40443</tardis:directBeamYPos>
+                        <tardis:detectorSN>928</tardis:detectorSN>
+                        <tardis:directBeamXPos>158.14867</tardis:directBeamXPos>
+                        <tardis:detectorDistance>250.0415</tardis:detectorDistance>
+                        <tardis:twoTheta>0.0</tardis:twoTheta>
+                        <tardis:imageSizeX>3072.0</tardis:imageSizeX>
+                        <tardis:imageSizeY>3072.0</tardis:imageSizeY>
+                        <tardis:xrayWavelength>0.953693</tardis:xrayWavelength>
+                        <tardis:imageType>ADSC</tardis:imageType>
+                    </tardis:datafile>
+                </xmlData>
+            </mdWrap>
+        </techMD>
+        <techMD ID="A-8">
+            <mdWrap OTHERMDTYPE="TARDISDATAFILE" MDTYPE="OTHER">
+                <xmlData>
+                    <tardis:datafile xmlns:tardis="http://www.tardis.edu.au/schemas/trdDatafile/1">
+                        <tardis:exposureTime>1.0</tardis:exposureTime>
+                        <tardis:directBeamYPos>160.40443</tardis:directBeamYPos>
+                        <tardis:detectorSN>928</tardis:detectorSN>
+                        <tardis:directBeamXPos>158.14867</tardis:directBeamXPos>
+                        <tardis:detectorDistance>250.0415</tardis:detectorDistance>
+                        <tardis:twoTheta>0.0</tardis:twoTheta>
+                        <tardis:imageSizeX>3072.0</tardis:imageSizeX>
+                        <tardis:imageSizeY>3072.0</tardis:imageSizeY>
+                        <tardis:xrayWavelength>0.953693</tardis:xrayWavelength>
+                        <tardis:imageType>ADSC</tardis:imageType>
+                    </tardis:datafile>
+                </xmlData>
+            </mdWrap>
+        </techMD>
+    </amdSec>
+    <fileSec>
+        <fileGrp USE="original">
+            <file MIMETYPE="application/octet-stream" ADMID="A-2" CHECKSUMTYPE="SHA-512" CHECKSUM="9e1e5ab4df77c156f3518345f404cba4" ID="F-1" OWNERID="xtal2_2_4_006.img" SIZE="13">
+                <FLocat xlink:href="file://xtal2_2_4/xtal2_2_4_006.img" LOCTYPE="URL" xlink:type="simple"/>
+            </file>
+            <file MIMETYPE="application/octet-stream" ADMID="A-3" CHECKSUMTYPE="SHA-512" CHECKSUM="b8e32c00a8f75894be8d0595f79bae0f" ID="F-2" OWNERID="xtal2_2_4_008.img" SIZE="13">
+                <FLocat xlink:href="file://xtal2_2_4/xtal2_2_4_008.img" LOCTYPE="URL" xlink:type="simple"/>
+            </file>
+            <file MIMETYPE="application/octet-stream" ADMID="A-4" CHECKSUMTYPE="SHA-512" CHECKSUM="079cc58b12428ddfba6686b00bd987f4" ID="F-3" OWNERID="xtal2_2_4_036.img" SIZE="13">
+                <FLocat xlink:href="file://xtal2_2_4/xtal2_2_4_036.img" LOCTYPE="URL" xlink:type="simple"/>
+            </file>
+            <file MIMETYPE="application/octet-stream" ADMID="A-6" CHECKSUMTYPE="SHA-512" CHECKSUM="d2d6317089e65ee60de0a48d73932ca2" ID="F-754" OWNERID="xtal2_3_004.img" SIZE="13">
+                <FLocat xlink:href="file://xtal2_3/xtal2_3_004.img" LOCTYPE="URL" xlink:type="simple"/>
+            </file>
+            <file MIMETYPE="application/octet-stream" ADMID="A-7" CHECKSUMTYPE="SHA-512" CHECKSUM="c00fadd0a5e3075e76be63ea558b7cb7" ID="F-755" OWNERID="xtal2_3_014.img" SIZE="13">
+                <FLocat xlink:href="file://xtal2_3/xtal2_3_014.img" LOCTYPE="URL" xlink:type="simple"/>
+            </file>
+            <file MIMETYPE="application/octet-stream" ADMID="A-8" CHECKSUMTYPE="SHA-512" CHECKSUM="60ba3b3871f08ddbbf8008cb68092f1c" ID="F-756" OWNERID="xtal2_3_024.img" SIZE="13">
+                <FLocat xlink:href="file://xtal2_3/xtal2_3_024.img" LOCTYPE="URL" xlink:type="simple"/>
+            </file>
+        </fileGrp>
+    </fileSec>
+    <structMap TYPE="logical">
+        <div TYPE="investigation" DMDID="E-1">
+            <div ADMID="A-1" TYPE="dataset" DMDID="D-1">
+                <fptr FILEID="F-1"/>
+                <fptr FILEID="F-2"/>
+                <fptr FILEID="F-3"/>
+            </div>
+            <div ADMID="A-5" TYPE="dataset" DMDID="D-2">
+                <fptr FILEID="F-754"/>
+                <fptr FILEID="F-755"/>
+                <fptr FILEID="F-756"/>
+            </div>
+        </div>
+    </structMap>
+</mets>
