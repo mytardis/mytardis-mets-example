@@ -1,3 +1,5 @@
+#!/usr/bin/env bin/run-python
+
 # MyTardis web service METS create experiment and file sftp
 # Author: Steve Androulakis <steve.androulakis@gmail.com>
 # Based on http://code.activestate.com/recipes/576810-copy-files-over-ssh-using-paramiko/

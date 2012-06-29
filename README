@@ -1,0 +1,5 @@
+To run:
+
+    python bootstrap.py --distribute
+    bin/buildout install
+    ./mytardis_mets_post.py
