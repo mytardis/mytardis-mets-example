@@ -44,7 +44,6 @@ glob_pattern = "*" # TODO: test
 
 # Local and remote directory for file copy
 local_file_dir = os.path.join(cwd, "examplefiles636/")
-mytardis_store_dir = "/tmp/mytardis_store"
 
 def agent_auth(transport, username, rsa_private_key=None):
     """
@@ -104,10 +103,10 @@ def create_experiment(metsxml_path, ws_username, ws_password, experiment_owner):
     # Create the Request object
     request = urllib2.Request(url_complete, datagen, headers)
     # Actually do the request, and get the response
-    experiment_id = urllib2.urlopen(request).read()
-    print "Experiment created: " + str(experiment_id)
+    experiment_temp_path = urllib2.urlopen(request).read()
+    print "Experiment created. Files to be sent to: " + experiment_temp_path
 
-    return experiment_id
+    return experiment_temp_path
     
 def transfer_files(username, password, port, hostname,
     glob_pattern, dir_local, dir_remote):
@@ -174,10 +173,10 @@ def transfer_files(username, password, port, hostname,
 
 files_copied = 0
 
-experiment_id = create_experiment(metsxml_path, ws_username, ws_password, experiment_owner)
+experiment_temp_path = create_experiment(metsxml_path, ws_username, ws_password, experiment_owner)
 
 dir_local = local_file_dir
-dir_remote = os.path.join(mytardis_store_dir, experiment_id)
+dir_remote = experiment_temp_path
 print "LOCAL DIR TO COPY IS: " + dir_local
 print "REMOTE DIR IS: " + dir_remote
 
