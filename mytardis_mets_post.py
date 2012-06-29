@@ -10,51 +10,50 @@ from poster.streaminghttp import register_openers
 import urllib2
 from urlparse import urljoin
 
+import getpass
 import os
 import paramiko
 import md5
 import glob
 
+defaults = {
+  'web_host': 'http://localhost:8000',
+  'ssh_host': 'localhost',
+  'username': getpass.getuser(),
+}
+
 cwd = os.getcwd()
 # CONFIGURABLE VARIABLES
 
 # WEB SERVICE
-web_url = "http://localhost:8000/"
+web_url = raw_input("Web Server URL [%s]: " % defaults['web_host']) or defaults['web_host']
 register_ws_url = "/experiment/register/"
-ws_username = "mytardis"
-ws_password = "mytardis"
-experiment_owner = "mytardis"
+ws_username = raw_input("Web Server Username [%s]: " % defaults['username']) or defaults['username']
+ws_password = getpass.getpass("Web Server Password: ")
+experiment_owner = ws_username
 #metsxml_path = "/Users/steve/Dropbox/TARDIS/MyTARDIS/METS/exports/mets_expid_636_example.xml"
 metsxml_path = os.path.join(cwd, "mets_expid_636_example.xml")
 
-# SECURE COPY (ssh login details)
-username = "username"
-password = "password"
-# or
-# rsa_private_key = r"/path/to/.ssh/rsa_private_key"
+# SECURE COPY (ssh login details
+
+hostname = raw_input("SSH Host [%s]: " % defaults['ssh_host']) or defaults['ssh_host']
+username = raw_input("SSH Username [%s]: " % defaults['username']) or defaults['username']
+password = getpass.getpass("SSH Password: ")
 port = 22
-hostname = "localhost"
 glob_pattern = "*" # TODO: test
 
 # Local and remote directory for file copy
 local_file_dir = os.path.join(cwd, "examplefiles636/")
-mytardis_store_dir = "/opt/mytardis/current/var/store"
+mytardis_store_dir = "/tmp/mytardis_store"
 
 def agent_auth(transport, username, rsa_private_key=None):
     """
     Attempt to authenticate to the given transport using any of the private
     keys available from an SSH agent or from a local private RSA key file (assumes no pass phrase).
     """
-    agent_keys = {}
-    try:
-        ki = paramiko.RSAKey.from_private_key_file(rsa_private_key)
-        
-        agent = paramiko.Agent()
-        agent_keys = agent.get_keys() + (ki,)
-             
-    except Exception, e:
-        print 'RSA key invalid.. moving on'
-        
+    agent = paramiko.Agent()
+    agent_keys = agent.get_keys()
+    
     if len(agent_keys) == 0:
         return
 
@@ -147,10 +146,15 @@ def transfer_files(username, password, port, hostname,
             sftp = t.open_session()
         sftp = paramiko.SFTPClient.from_transport(t)
 
-        try:
-            sftp.mkdir(dir_remote)
-        except IOError, e:
-            print '(assuming ', dir_remote, 'exists)', e
+        
+        remote_dir_parts = dir_remote.split(os.sep)
+        for i in range(1, len(remote_dir_parts)):
+            d = os.sep.join(remote_dir_parts[:i+1])
+            try:
+                print "*** Creating remote directory: %s" % d
+                sftp.mkdir(d)
+            except IOError, e:
+                print '(assuming ', d, 'exists)', e
 
         print dir_local
         recursive_scopy(dir_local)
